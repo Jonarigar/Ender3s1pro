@@ -20,12 +20,19 @@ jobs:
       - name: Install PlatformIO
         run: pip install platformio
 
-      - name: Build firmware
+      - name: Build firmware RC (256KB)
         run: platformio run -e STM32F401RC_creality
+        continue-on-error: true
+
+      - name: Build firmware RE (512KB)
+        run: platformio run -e STM32F401RE_creality
+        continue-on-error: true
 
       - name: Upload firmware artifact
         uses: actions/upload-artifact@v4
         with:
           name: firmware-Ender3S1-F4
-          path: .pio/build/STM32F401RC_creality/*.bin
+          path: |
+            .pio/build/STM32F401RC_creality/*.bin
+            .pio/build/STM32F401RE_creality/*.bin
           retention-days: 30
