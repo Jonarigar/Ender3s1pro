@@ -3602,20 +3602,20 @@
   #define MESH_EDIT_MENU
   //#define PREVIEW_MENU_ITEM    // Allows enable/disable Thumbnail preview via menu and C250
   #define SHOW_REAL_POS        // Display the real axes position in cartesian printers
-  //#define ACTIVATE_MESH_ITEM   // Allows temporary enabling of mesh leveling
+  #define ACTIVATE_MESH_ITEM   // Allows temporary enabling of mesh leveling
   #define RUNOUT_TUNE_ITEM     // Allows enable/disable the run out filament sensor while printing
   //#define PLR_TUNE_ITEM        // Allows enable/disable the power lost recovery while printing  // Disabled F401RC 256KB
   //#define JD_TUNE_ITEM         // Enable only if Juntion Deviation is enabled
   //#define ADVK_TUNE_ITEM       // Enable only if Linear Advance is enabled
-  //#define MEDIASORT_MENU_ITEM  // Allows enable/disable file list sorting
+  #define MEDIASORT_MENU_ITEM  // Allows enable/disable file list sorting
   #define SHOW_SPEED_IND       // Show the axes speed in mm/s intermittently with the speed percentage
   //#define NO_BLINK_IND         // Disables dashboard icon background blink indicator
 #endif
-//#define ZOFFSET_SAVE_SETTINGS // Saves settings after changing the z-offset via the menu
+#define ZOFFSET_SAVE_SETTINGS // Saves settings after changing the z-offset via the menu
 //#define HAS_SD_EXTENDER 1  // Enable to support SD card extender cables
 //#define CCLOUD_PRINT_SUPPORT  // Allows enable/disable Creality Cloud Print Support
 #define ZHOME_BEFORE_LEVELING
-//#define SMOOTH_ENCODER_MENUITEMS  // Menu items value faster/smooth change rate
+#define SMOOTH_ENCODER_MENUITEMS  // Menu items value faster/smooth change rate
 
 //#define DWIN_CREALITY_LCD_JYERSUI   // Jyers UI by Jacob Myers
 //#define DWIN_MARLINUI_PORTRAIT      // MarlinUI (portrait orientation)
